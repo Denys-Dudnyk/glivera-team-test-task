@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Dashboard</title>
+		<link rel="stylesheet" href="/css/styles.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="dashboard">
+			<div class="mobile__menu">
+				<div class="hidden__logo">
+					<img
+						src="/public/logo.svg"
+						alt="Dashboard Logo"
+						class="sidebar__logo-img"
+					/>
+					<span class="sidebar__logo-text">v.01</span>
+				</div>
+				<button class="mobile-menu-toggle" aria-label="Toggle menu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+			</div>
+			<aside class="sidebar">
+				<div class="sidebar__logo">
+					<img
+						src="/public/logo.svg"
+						alt="Dashboard Logo"
+						class="sidebar__logo-img"
+					/>
+					<span class="sidebar__logo-text">v.01</span>
+				</div>
+				<nav class="sidebar__nav">
+					<ul class="sidebar__nav-list">
+						<li class="sidebar__nav-item">
+							<a href="#" class="sidebar__nav-link"
+								><img
+									src="/public/key-square.svg"
+									alt=""
+									class="sidebar__nav-img"
+								/>Dashboard</a
+							>
+						</li>
+						<li class="sidebar__nav-item">
+							<a href="#" class="sidebar__nav-link"
+								><img
+									src="/public/3d-square.svg"
+									alt=""
+									class="sidebar__nav-img" />Product<img
+									src="/public/arrow.svg"
+									alt=""
+									class="sidebar__nav-arrow"
+							/></a>
+						</li>
+						<li class="sidebar__nav-item">
+							<a href="#" class="sidebar__nav-link sidebar__nav-link--active"
+								><img
+									src="/public/user-square.svg"
+									alt=""
+									class="sidebar__nav-img" />Customers<img
+									src="/public/arrow.svg"
+									alt=""
+									class="sidebar__nav-arrow"
+							/></a>
+						</li>
+						<li class="sidebar__nav-item">
+							<a href="#" class="sidebar__nav-link"
+								><img
+									src="/public/wallet-money.svg"
+									alt=""
+									class="sidebar__nav-img" />Income<img
+									src="/public/arrow.svg"
+									alt=""
+									class="sidebar__nav-arrow"
+							/></a>
+						</li>
+						<li class="sidebar__nav-item">
+							<a href="#" class="sidebar__nav-link"
+								><img
+									src="/public/discount-shape.svg"
+									alt=""
+									class="sidebar__nav-img" />Promote<img
+									src="/public/arrow.svg"
+									alt=""
+									class="sidebar__nav-arrow"
+							/></a>
+						</li>
+						<li class="sidebar__nav-item">
+							<a href="#" class="sidebar__nav-link"
+								><img
+									src="/public/message-question.svg"
+									alt=""
+									class="sidebar__nav-img" />Help<img
+									src="/public/arrow.svg"
+									alt=""
+									class="sidebar__nav-arrow"
+							/></a>
+						</li>
+					</ul>
+				</nav>
+				<div class="sidebar__user">
+					<img src="/public/user.svg" alt="User Image" />
+					<div class="sidebar__user-text">
+						<p>Evano</p>
+						<p>Project Manager</p>
+					</div>
+				</div>
+			</aside>
+			<main class="main-content">
+				<header class="header">
+					<h1 class="header__title">Hello Evano 👋,</h1>
+				</header>
+				<section class="customers">
+					<div class="customers__header">
+						<div class="customers__text">
+							<h2 class="customers__text-title">All Customers</h2>
+							<p class="customers__text-subtitle">Active Members</p>
+						</div>
+						<div class="customers__search">
+							<img
+								src="/public/search.svg"
+								alt="Search"
+								class="customer__search-img"
+							/>
+							<input
+								type="text"
+								placeholder="Search"
+								class="customers__search-input"
+							/>
+						</div>
+					</div>
+					<div class="customers__table-wrapper">
+						<table class="customers__table">
+							<thead>
+								<tr>
+									<th>Customer Name</th>
+									<th>Company</th>
+									<th>Phone Number</th>
+									<th>Email</th>
+									<th>Country</th>
+									<th>Status</th>
+								</tr>
+							</thead>
+							<tbody class="customers__tbody">
+								<!-- Table rows will be dynamically inserted here -->
+							</tbody>
+						</table>
+					</div>
+					<div class="customers__pagination">
+						<span class="customers__pagination-info"
+							>Showing data 1 to 8 of 256K entries</span
+						>
+						<div class="customers__pagination-controls">
+							<button class="customers__pagination-btn">&lt;</button>
+							<button
+								class="customers__pagination-btn customers__pagination-btn--active"
+							>
+								1
+							</button>
+							<button class="customers__pagination-btn">2</button>
+							<button class="customers__pagination-btn">3</button>
+							<button class="customers__pagination-btn">4</button>
+							<span class="customers__pagination-ellipsis">...</span>
+							<button class="customers__pagination-btn">40</button>
+							<button class="customers__pagination-btn">&gt;</button>
+						</div>
+					</div>
+				</section>
+			</main>
+		</div>
+		<script src="/js/script.js"></script>
+	</body>
+</html>
