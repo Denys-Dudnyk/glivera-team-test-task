@@ -407,6 +407,7 @@ body {
 	}
 	.customers__table-wrapper {
 		overflow-x: auto;
+		overflow-y: hidden;
 	}
 
 	.customers__table {
